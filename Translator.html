@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>Translate</title>		
+	</head>
+
+	<body>
+		<h1 align="center">Переводчик</h1>
+
+		<label>Язык входного текста:</label>
+		<select id="lanquageInput">
+			<option value="auto">Автоопределение</option>
+			<option value="az">азербайджанский</option>
+			<option value="sq">албанский</option>
+			<option value="am">амхарский</option>
+			<option value="en">английский</option>
+			<option value="ar">арабский</option>
+			<option value="hy">армянский</option>
+			<option value="af">африкаанс</option>
+			<option value="eu">баскский</option>
+			<option value="ba">башкирский</option>
+			<option value="be">белорусский</option>
+			<option value="bn">бенгальский</option>
+			<option value="my">бирманский</option>
+			<option value="bg">болгарский</option>
+			<option value="bs">боснийский</option>
+			<option value="cy">валлийский</option>
+			<option value="hu">венгерский</option>
+			<option value="vi">вьетнамский</option>
+			<option value="ht">гаитянский (креольский)</option>
+			<option value="gl">галисийский</option>
+			<option value="nl">голландский</option>
+			<option value="mrj">горномарийский</option>
+			<option value="el">греческий</option>
+			<option value="ka">грузинский</option>
+			<option value="gu">гуджарати</option>
+			<option value="da">датский</option>
+			<option value="he">иврит</option>
+			<option value="yi">идиш</option>
+			<option value="id">индонезийский</option>
+			<option value="ga">ирландский</option>
+			<option value="it">итальянский</option>
+			<option value="is">исландский</option>
+			<option value="es">испанский</option>
+			<option value="kk">казахский</option>
+			<option value="kn">каннада</option>
+			<option value="ca">каталанский</option>
+			<option value="ky">киргизский</option>
+			<option value="zh">китайский</option>
+			<option value="ko">корейский</option>
+			<option value="xh">коса</option>
+			<option value="km">кхмерский</option>
+			<option value="lo">лаосский</option>
+			<option value="la">латынь</option>
+			<option value="lv">латышский</option>
+			<option value="lt">литовский</option>
+			<option value="lb">люксембургский</option>
+			<option value="mg">малагасийский</option>
+			<option value="ms">малайский</option>
+			<option value="ml">малаялам</option>
+			<option value="mt">мальтийский</option>
+			<option value="mk">македонский</option>
+			<option value="mi">маори</option>
+			<option value="mr">маратхи</option>
+			<option value="mhr">марийский</option>
+			<option value="mn">монгольский</option>
+			<option value="de">немецкий</option>
+			<option value="ne">непальский</option>
+			<option value="no">норвежский</option>
+			<option value="pa">панджаби</option>
+			<option value="pap">папьяменто</option>
+			<option value="fa">персидский</option>
+			<option value="pl">польский</option>
+			<option value="pt">португальский</option>
+			<option value="ro">румынский</option>
+			<option value="ru">русский</option>
+			<option value="ceb">себуанский</option>
+			<option value="sr">сербский</option>
+			<option value="si">сингальский</option>
+			<option value="sk">словацкий</option>
+			<option value="sl">словенский</option>
+			<option value="sw">суахили</option>
+			<option value="su">сунданский</option>
+			<option value="tg">таджикский</option>
+			<option value="th">тайский</option>
+			<option value="tl">тагальский</option>
+			<option value="ta">тамильский</option>
+			<option value="tt">татарский</option>
+			<option value="te">телугу</option>
+			<option value="tr">турецкий</option>
+			<option value="udm">удмуртский</option>
+			<option value="uz">узбекский</option>
+			<option value="uk">украинский</option>
+			<option value="ur">урду</option>
+			<option value="fi">финский</option>
+			<option value="fr">французский</option>
+			<option value="hi">хинди</option>
+			<option value="hr">хорватский</option>
+			<option value="cs">чешский</option>
+			<option value="sv">шведский</option>
+			<option value="gd">шотландский</option>
+			<option value="et">эстонский</option>
+			<option value="eo">эсперанто</option>
+			<option value="jv">яванский</option>
+			<option value="ja">японский</option>
+		</select>   
+           
+		&nbsp&nbsp&nbsp&nbsp
+		   
+		<label>Язык выходного текта:</align>
+		<select id="languageOutput">
+			<option value="az">азербайджанский</option>
+			<option value="sq">албанский</option>
+			<option value="am">амхарский</option>
+			<option value="en">английский</option>
+			<option value="ar">арабский</option>
+			<option value="hy">армянский</option>
+			<option value="af">африкаанс</option>
+			<option value="eu">баскский</option>
+			<option value="ba">башкирский</option>
+			<option value="be">белорусский</option>
+			<option value="bn">бенгальский</option>
+			<option value="my">бирманский</option>
+			<option value="bg">болгарский</option>
+			<option value="bs">боснийский</option>
+			<option value="cy">валлийский</option>
+			<option value="hu">венгерский</option>
+			<option value="vi">вьетнамский</option>
+			<option value="ht">гаитянский (креольский)</option>
+			<option value="gl">галисийский</option>
+			<option value="nl">голландский</option>
+			<option value="mrj">горномарийский</option>
+			<option value="el">греческий</option>
+			<option value="ka">грузинский</option>
+			<option value="gu">гуджарати</option>
+			<option value="da">датский</option>
+			<option value="he">иврит</option>
+			<option value="yi">идиш</option>
+			<option value="id">индонезийский</option>
+			<option value="ga">ирландский</option>
+			<option value="it">итальянский</option>
+			<option value="is">исландский</option>
+			<option value="es">испанский</option>
+			<option value="kk">казахский</option>
+			<option value="kn">каннада</option>
+			<option value="ca">каталанский</option>
+			<option value="ky">киргизский</option>
+			<option value="zh">китайский</option>
+			<option value="ko">корейский</option>
+			<option value="xh">коса</option>
+			<option value="km">кхмерский</option>
+			<option value="lo">лаосский</option>
+			<option value="la">латынь</option>
+			<option value="lv">латышский</option>
+			<option value="lt">литовский</option>
+			<option value="lb">люксембургский</option>
+			<option value="mg">малагасийский</option>
+			<option value="ms">малайский</option>
+			<option value="ml">малаялам</option>
+			<option value="mt">мальтийский</option>
+			<option value="mk">македонский</option>
+			<option value="mi">маори</option>
+			<option value="mr">маратхи</option>
+			<option value="mhr">марийский</option>
+			<option value="mn">монгольский</option>
+			<option value="de">немецкий</option>
+			<option value="ne">непальский</option>
+			<option value="no">норвежский</option>
+			<option value="pa">панджаби</option>
+			<option value="pap">папьяменто</option>
+			<option value="fa">персидский</option>
+			<option value="pl">польский</option>
+			<option value="pt">португальский</option>
+			<option value="ro">румынский</option>
+			<option value="ru">русский</option>
+			<option value="ceb">себуанский</option>
+			<option value="sr">сербский</option>
+			<option value="si">сингальский</option>
+			<option value="sk">словацкий</option>
+			<option value="sl">словенский</option>
+			<option value="sw">суахили</option>
+			<option value="su">сунданский</option>
+			<option value="tg">таджикский</option>
+			<option value="th">тайский</option>
+			<option value="tl">тагальский</option>
+			<option value="ta">тамильский</option>
+			<option value="tt">татарский</option>
+			<option value="te">телугу</option>
+			<option value="tr">турецкий</option>
+			<option value="udm">удмуртский</option>
+			<option value="uz">узбекский</option>
+			<option value="uk">украинский</option>
+			<option value="ur">урду</option>
+			<option value="fi">финский</option>
+			<option value="fr">французский</option>
+			<option value="hi">хинди</option>
+			<option value="hr">хорватский</option>
+			<option value="cs">чешский</option>
+			<option value="sv">шведский</option>
+			<option value="gd">шотландский</option>
+			<option value="et">эстонский</option>
+			<option value="eo">эсперанто</option>
+			<option value="jv">яванский</option>
+			<option value="ja">японский</option>
+		</select>
+	
+		<P><textarea id="inputText" cols="40"></textarea>
+		
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		
+		<textarea id="outputText" cols="40"></textarea></P>
+	
+		<input type="button" value="Перевести" onclick="yatr.translate('inputText', log)" />
+		
+		<script type="text/javascript">
+		
+			var yatr = {
+				
+				key : 'trnsl.1.1.20170704T111402Z.c5caaccae11691b0.fe3ef4313b9aada0da72a045665d43a15a6059dd',
+				api : 'https://translate.yandex.net/api/v1.5/tr.json/translate',
+				
+				translate : function (id, callback) {
+
+					var text = document.getElementById(id).value;
+					var url = this.api + '?';
+					
+					url+= 'key=' + this.key;
+					url+= '&text=' + text;
+					var language = document.getElementById("lanquageInput");
+					var inLang = language.options[language.selectedIndex].value;
+					
+					language = document.getElementById("languageOutput");
+					var outLang = language.options[language.selectedIndex].value;
+					if (inLang == 'auto') {
+						url+= '&lang=' + outLang;
+					} else {
+						url+= '&lang=' + inLang + '-' + outLang;
+						}
+					
+					var ajax = new XMLHttpRequest();
+					ajax.open('GET', url, true);
+					ajax.onreadystatechange = function() {
+						if (ajax.readyState == 4){
+							if (ajax.status == 200) {
+								text = ajax.responseText;
+								text = JSON.parse(text);
+								text = text.text[0];
+								callback(text);
+								
+							}
+						}				
+					};
+					ajax.send(null);
+				},
+				
+				revert : function (id) {
+				
+				},
+				
+			};
+			
+			log = function (text) {
+				document.getElementById('outputText').value = text;
+			};
+				
+		</script>
+	
+	</body>
+
+</html>
